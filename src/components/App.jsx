@@ -4,7 +4,7 @@ import { Navigation } from './Navigation/Navigation';
 import { Home } from 'pages/Home/Home';
 import { SignUpForm } from './SignUpForm/SignUpForm';
 import { LogInForm } from './LogInForm/LogInForm';
-import { Contacts } from 'pages/Contacts/Contacts';
+import { Dragons } from 'pages/Dragons/Dragons';
 
 const token = true;
 const user = {
@@ -21,20 +21,20 @@ export const App = () => {
           <Route
             path="/register"
             element={
-              !token ? <SignUpForm /> : <Navigate to="/contacts" replace />
+              !token ? <SignUpForm /> : <Navigate to="/dragons" replace />
             }
           />
           <Route
             path="/login"
             element={
-              !token ? <LogInForm /> : <Navigate to="/contacts" replace />
+              !token ? <LogInForm /> : <Navigate to="/dragons" replace />
             }
           />
           <Route
-            path="/contacts"
+            path="/dragons"
             element={
               token ? (
-                <Contacts token={token} />
+                <Dragons token={token} />
               ) : (
                 <Navigate to="/login" replace />
               )

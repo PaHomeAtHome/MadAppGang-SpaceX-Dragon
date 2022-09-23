@@ -29,7 +29,7 @@ export const Navigation = ({ token, user }) => {
               </Path>
             </Item>
             <Item>
-              <Path to="/contacts">
+              <Path to="/dragons">
                 <Link>
                   <UserMenu token={token} user={user} />
                 </Link>
