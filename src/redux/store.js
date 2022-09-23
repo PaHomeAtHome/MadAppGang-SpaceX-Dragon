@@ -13,16 +13,18 @@ import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 
 import { middleware } from './API/api';
-import { authorizationApi } from './API/api';
+// import { authorizationApi } from './API/api';
+import { dragonsApi } from './API/api';
 
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: [authorizationApi.reducerPath],
+  // blacklist: [authorizationApi.reducerPath],
 };
 
 const reducers = combineReducers({
-  [authorizationApi.reducerPath]: authorizationApi.reducer,
+  [dragonsApi.reducerPath]: dragonsApi.reducer,
+  // [authorizationApi.reducerPath]: authorizationApi.reducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
@@ -34,7 +36,10 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }).concat([middleware, authorizationApi.middleware]),
+    }).concat([
+      middleware,
+      // authorizationApi.middleware
+    ]),
 });
 
 export const persistor = persistStore(store);

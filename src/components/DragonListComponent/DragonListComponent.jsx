@@ -1,12 +1,11 @@
 import { Element } from './DragonListComponentStyled';
 
 export const DragonListComponent = ({ dragon }) => {
-  const { name, number } = dragon;
+  const { name } = dragon;
 
   return (
     <Element>
-      {name}
-      {number}
+      <p>{name}</p>
     </Element>
   );
 };

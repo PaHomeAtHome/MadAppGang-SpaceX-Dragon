@@ -32,13 +32,7 @@ export const App = () => {
           />
           <Route
             path="/dragons"
-            element={
-              token ? (
-                <Dragons token={token} />
-              ) : (
-                <Navigate to="/login" replace />
-              )
-            }
+            element={token ? <Dragons /> : <Navigate to="/login" replace />}
           />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
