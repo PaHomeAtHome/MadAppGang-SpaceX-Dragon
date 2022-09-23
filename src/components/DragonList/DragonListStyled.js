@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 export const DragonListStyled = styled.ul`
+  list-style: none;
   padding: 20px 0px;
   margin: 0;
   display: grid;
