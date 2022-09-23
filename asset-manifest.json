@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MadAppGang-SpaceX-Dragon/static/css/main.7acaea2f.css",
-    "main.js": "/MadAppGang-SpaceX-Dragon/static/js/main.07d3183d.js",
-    "index.html": "/MadAppGang-SpaceX-Dragon/index.html",
-    "main.7acaea2f.css.map": "/MadAppGang-SpaceX-Dragon/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/MadAppGang-SpaceX-Dragon/static/js/main.07d3183d.js.map"
+    "main.css": "/madappgang-spacex-dragon/static/css/main.7acaea2f.css",
+    "main.js": "/madappgang-spacex-dragon/static/js/main.0405d4b4.js",
+    "index.html": "/madappgang-spacex-dragon/index.html",
+    "main.7acaea2f.css.map": "/madappgang-spacex-dragon/static/css/main.7acaea2f.css.map",
+    "main.0405d4b4.js.map": "/madappgang-spacex-dragon/static/js/main.0405d4b4.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.0405d4b4.js"
   ]
 }
