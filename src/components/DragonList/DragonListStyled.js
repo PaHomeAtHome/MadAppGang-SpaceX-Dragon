@@ -4,7 +4,7 @@ export const DragonListStyled = styled.ul`
   padding: 20px 0px;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
   gap: 10px;
   justify-content: center;
 

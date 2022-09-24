@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export const Element = styled.li`
   padding: 20px;
-  background-color: #fafafa;
+  border: 1px solid #fafafa;
   border-radius: 10px;
 `;
 
@@ -23,4 +23,9 @@ export const Slider = styled(Carousel)`
   max-width: 900px;
   max-height: 700px;
   margin: auto;
+`;
+
+export const TableLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
 `;

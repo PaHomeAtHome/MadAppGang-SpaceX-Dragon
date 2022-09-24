@@ -1,20 +1,20 @@
+import Table from 'react-bootstrap/Table';
 import { Element } from './DragonListComponentStyled';
-import { Slider } from './DragonListComponentStyled';
+import { Slider, TableLink } from './DragonListComponentStyled';
 
 export const DragonListComponent = ({ dragon }) => {
   const {
     name,
     flickr_images,
     description,
-    // wikipedia,
-    // height_w_trunk,
-    // dry_mass_kg,
-    // first_flight,
+    wikipedia,
+    height_w_trunk,
+    dry_mass_kg,
+    first_flight,
   } = dragon;
 
   return (
     <Element>
-      <h3>{name}</h3>
       {flickr_images && (
         <Slider interval={null}>
           {flickr_images.map(image => (
@@ -30,7 +30,39 @@ export const DragonListComponent = ({ dragon }) => {
           ))}
         </Slider>
       )}
-      <p>{description}</p>
+      <Table striped bordered hover>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <td>{name}</td>
+          </tr>
+          <tr>
+            <th>Description</th>
+            <td>{description}</td>
+          </tr>
+
+          <tr>
+            <th>Wikipedia</th>
+            <td>
+              <TableLink href={wikipedia} target="_blank">
+                {wikipedia}
+              </TableLink>
+            </td>
+          </tr>
+          <tr>
+            <th>Height</th>
+            <td>{height_w_trunk.meters} m</td>
+          </tr>
+          <tr>
+            <th>Dry mass</th>
+            <td>{dry_mass_kg} kg</td>
+          </tr>
+          <tr>
+            <th>First flight</th>
+            <td>{first_flight}</td>
+          </tr>
+        </tbody>
+      </Table>
     </Element>
   );
 };
