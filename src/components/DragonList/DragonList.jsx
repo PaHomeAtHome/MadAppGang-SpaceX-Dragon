@@ -5,7 +5,6 @@ import { Spinner } from 'react-bootstrap';
 
 export const DragonList = () => {
   const { data, error, isLoading } = useGetDragonsQuery();
-  console.log(data);
   return (
     <DragonListStyled>
       {isLoading && <Spinner animation="border" variant="primary" />}

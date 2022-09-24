@@ -18,13 +18,13 @@ export const Navigation = ({ token, user }) => {
     <>
       <Header>
         {token ? (
-          <NavStyled fill justify variant="tabs" bg="light">
+          <NavStyled fill variant="tabs" bg="light">
             <Item>
               <Path to="/">
                 <Link>
-                  <Title>
-                    <BadgeStyled>Dragons</BadgeStyled>
-                  </Title>
+                  <BadgeStyled>
+                    <Title>Dragons</Title>
+                  </BadgeStyled>
                 </Link>
               </Path>
             </Item>

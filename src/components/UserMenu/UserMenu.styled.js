@@ -14,17 +14,20 @@ export const Profile = styled(Button)`
   align-items: center;
 `;
 
-export const Menu = styled(Dropdown)``;
+export const Menu = styled(Dropdown)`
+  .btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+  width: 100%;
+`;
 
 export const Toggle = styled(Menu.Toggle)`
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  box-shadow: none;
-  width: fit-content;
-  block-size: fit-content;
-
   &[aria-expanded='true'] {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -35,17 +38,3 @@ export const Toggle = styled(Menu.Toggle)`
 export const Options = styled(Menu.Menu)`
   text-align: center;
 `;
-
-// export const LogOutButton = styled.button`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-left: 20px;
-//   padding: 5px 10px;
-//   border: none;
-//   color: inherit;
-//   font-size: inherit;
-//   border-radius: 5px;
-//   background-color: red;
-//   cursor: pointer;
-// `;

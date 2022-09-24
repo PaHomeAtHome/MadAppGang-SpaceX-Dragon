@@ -8,7 +8,7 @@ import { Dragons } from 'pages/Dragons/Dragons';
 
 const token = true;
 const user = {
-  name: 'random',
+  name: 'randomsadsaddas asdsaddasasd ',
   email: 'random.org',
 };
 

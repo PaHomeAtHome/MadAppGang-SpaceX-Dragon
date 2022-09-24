@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { LinkContainer } from 'react-router-bootstrap';
-import Badge from 'react-bootstrap/Badge';
 
 export const Header = styled(Navbar)`
   display: block;
@@ -13,7 +12,11 @@ export const NavStyled = styled(Nav)`
   width: 100%;
   border-bottom: none;
   .nav-link {
-    border-bottom: 1px solid #dee2e6;
+    /* border-bottom: 1px solid #dee2e6; */
+  }
+
+  .active {
+    border-bottom: none;
   }
 `;
 
@@ -34,6 +37,8 @@ export const Output = styled.div`
 export const Path = styled(LinkContainer)``;
 
 export const Item = styled(NavStyled.Item)`
+  display: flex;
+  flex: 1;
   /* & .nav-link.active {
     background-color: rgb(13, 110, 253);
     color: rgb(13, 110, 253);
@@ -44,16 +49,24 @@ export const Link = styled(NavStyled.Link)`
   display: flex !important;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  min-height: 70px;
 `;
 
-export const BadgeStyled = styled(Badge)`
+export const BadgeStyled = styled.div`
   background-color: rgba(13, 110, 253);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 10px;
   &:hover {
     background-color: #0a58ca;
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h3`
   margin: 0;
+  line-height: 1;
+  color: white;
 `;
