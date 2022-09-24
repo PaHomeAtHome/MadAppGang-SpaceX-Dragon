@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
+import Table from 'react-bootstrap/Table';
 
 export const Element = styled.li`
   padding: 20px;
@@ -28,4 +29,11 @@ export const Slider = styled(Carousel)`
 export const TableLink = styled.a`
   text-decoration: none;
   cursor: pointer;
+`;
+
+export const TableEl = styled(Table)`
+  td {
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
 `;

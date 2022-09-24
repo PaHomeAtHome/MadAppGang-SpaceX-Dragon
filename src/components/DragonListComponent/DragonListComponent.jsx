@@ -1,6 +1,5 @@
-import Table from 'react-bootstrap/Table';
 import { Element } from './DragonListComponentStyled';
-import { Slider, TableLink } from './DragonListComponentStyled';
+import { Slider, TableLink, TableEl } from './DragonListComponentStyled';
 
 export const DragonListComponent = ({ dragon }) => {
   const {
@@ -30,7 +29,7 @@ export const DragonListComponent = ({ dragon }) => {
           ))}
         </Slider>
       )}
-      <Table striped bordered hover>
+      <TableEl responsible striped bordered hover>
         <tbody>
           <tr>
             <th>Name</th>
@@ -62,7 +61,7 @@ export const DragonListComponent = ({ dragon }) => {
             <td>{first_flight}</td>
           </tr>
         </tbody>
-      </Table>
+      </TableEl>
     </Element>
   );
 };
