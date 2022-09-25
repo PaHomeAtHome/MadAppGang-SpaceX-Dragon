@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/madappgang-spacex-dragon/static/css/main.7acaea2f.css",
-    "main.js": "/madappgang-spacex-dragon/static/js/main.2421ede3.js",
+    "main.js": "/madappgang-spacex-dragon/static/js/main.693cefa6.js",
     "index.html": "/madappgang-spacex-dragon/index.html",
     "main.7acaea2f.css.map": "/madappgang-spacex-dragon/static/css/main.7acaea2f.css.map",
-    "main.2421ede3.js.map": "/madappgang-spacex-dragon/static/js/main.2421ede3.js.map"
+    "main.693cefa6.js.map": "/madappgang-spacex-dragon/static/js/main.693cefa6.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.2421ede3.js"
+    "static/js/main.693cefa6.js"
   ]
 }
