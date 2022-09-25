@@ -1,13 +1,17 @@
 import { useEffect } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import {
+  useParams,
+  // useLocation
+} from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 import { useGetOneDragonQuery } from 'redux/API/api';
 import { DragonListComponent } from 'components/DragonListComponent/DragonListComponent';
 
 const DragonDetails = () => {
   const { dragonId } = useParams();
-  const location = useLocation();
-  const backLinkHref = location.state?.from ?? '/';
+  // const location = useLocation();
+
+  // const backLinkHref = location.state?.from ?? '/';
 
   const { data, error, isLoading, refetch } = useGetOneDragonQuery(dragonId);
 
