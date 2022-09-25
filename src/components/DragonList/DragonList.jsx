@@ -19,8 +19,10 @@ export const DragonList = () => {
       {isLoading && <Spinner animation="border" variant="primary" />}
       {error && <p>{error.message}</p>}
       {data &&
-        [...data].map(dragon => (
-          <DragonListComponent key={dragon.id} dragon={dragon} />
+        data.map(dragon => (
+          <li>
+            <DragonListComponent key={dragon.id} dragon={dragon} />
+          </li>
         ))}
     </DragonListStyled>
   );

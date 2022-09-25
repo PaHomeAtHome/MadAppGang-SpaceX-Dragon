@@ -13,6 +13,12 @@ export const dragonsApi = createApi({
       }),
       providesTags: [`Dragons`],
     }),
+    getOneDragon: builder.query({
+      query: id => ({
+        url: `dragons/${id}`,
+      }),
+      providesTags: [`Dragon`],
+    }),
   }),
 });
 
@@ -57,4 +63,5 @@ export const dragonsApi = createApi({
 //   }),
 // });
 
-export const { useGetDragonsQuery, middleware } = dragonsApi;
+export const { useGetDragonsQuery, useGetOneDragonQuery, middleware } =
+  dragonsApi;

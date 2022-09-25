@@ -23,8 +23,8 @@ export const Menu = styled(Dropdown)`
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: anywhere;
+    width: 100%;
   }
-  width: 100%;
 `;
 
 export const Toggle = styled(Menu.Toggle)`

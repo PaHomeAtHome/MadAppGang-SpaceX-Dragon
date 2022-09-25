@@ -18,13 +18,7 @@ export const DragonListComponent = ({ dragon }) => {
         <Slider interval={null}>
           {flickr_images.map(image => (
             <Slider.Item key={image}>
-              <img
-                className="d-block w-100"
-                src={image}
-                alt="Third slide"
-                style={{ objectFit: 'cover' }}
-                height="300px"
-              />
+              <img className="d-block w-100" src={image} alt={image} />
             </Slider.Item>
           ))}
         </Slider>

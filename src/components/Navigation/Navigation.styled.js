@@ -11,12 +11,22 @@ export const Header = styled(Navbar)`
 export const NavStyled = styled(Nav)`
   width: 100%;
   border-bottom: none;
+
   .nav-link {
     /* border-bottom: 1px solid #dee2e6; */
   }
 
   .active {
-    border-bottom: none;
+    /* position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 47.5%;
+      bottom: 0;
+      width: 5%;
+      border-bottom: 2px solid #0d6efd;
+    } */
   }
 `;
 
@@ -43,6 +53,8 @@ export const Item = styled(NavStyled.Item)`
     background-color: rgb(13, 110, 253);
     color: rgb(13, 110, 253);
   } */
+
+  background-color: #fbfbfb;
 `;
 
 export const Link = styled(NavStyled.Link)`
@@ -54,7 +66,7 @@ export const Link = styled(NavStyled.Link)`
 
 export const BadgeStyled = styled.div`
   background-color: rgba(13, 110, 253);
-  height: 50px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
