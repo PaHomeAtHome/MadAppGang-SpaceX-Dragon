@@ -29,7 +29,7 @@ export const DragonListComponent = ({ dragon }) => {
           ))}
         </Slider>
       )}
-      <TableEl responsible striped bordered hover>
+      <TableEl responsive striped bordered hover>
         <tbody>
           <tr>
             <th>Name</th>
