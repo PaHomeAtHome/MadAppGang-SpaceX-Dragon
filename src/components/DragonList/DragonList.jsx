@@ -6,7 +6,7 @@ import { Spinner } from 'react-bootstrap';
 
 export const DragonList = () => {
   const { data, error, isLoading, refetch } = useGetDragonsQuery();
-
+  console.log(data);
   useEffect(() => {
     if (data) {
       setTimeout(refetch, 1500);
@@ -20,8 +20,8 @@ export const DragonList = () => {
       {error && <p>{error.message}</p>}
       {data &&
         data.map(dragon => (
-          <li>
-            <DragonListComponent key={dragon.id} dragon={dragon} />
+          <li key={dragon.id}>
+            <DragonListComponent dragon={dragon} link />
           </li>
         ))}
     </DragonListStyled>

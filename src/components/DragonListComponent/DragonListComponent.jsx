@@ -1,9 +1,11 @@
 import { Element } from './DragonListComponentStyled';
-import { Slider, TableLink, TableEl } from './DragonListComponentStyled';
+import { Slider, TableLink, TableEl, Link } from './DragonListComponentStyled';
+import { Button } from 'react-bootstrap';
 
-export const DragonListComponent = ({ dragon }) => {
+export const DragonListComponent = ({ dragon, link }) => {
   const {
     name,
+    id,
     flickr_images,
     description,
     wikipedia,
@@ -56,6 +58,11 @@ export const DragonListComponent = ({ dragon }) => {
           </tr>
         </tbody>
       </TableEl>
+      {link && (
+        <Link to={`details/${id}`}>
+          <Button>Learn more</Button>
+        </Link>
+      )}
     </Element>
   );
 };

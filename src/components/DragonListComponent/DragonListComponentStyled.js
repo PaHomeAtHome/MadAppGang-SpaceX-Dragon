@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
 import Table from 'react-bootstrap/Table';
+import { NavLink } from 'react-router-dom';
 
 export const Element = styled.div`
-  padding: 20px;
   border: 1px solid #fafafa;
   border-radius: 10px;
   background-color: #fbfbfb;
+  padding: 20px;
 `;
 
 export const Slider = styled(Carousel)`
@@ -51,4 +52,12 @@ export const TableEl = styled(Table)`
   }
 
   margin: 0 !important;
+`;
+
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
 `;
