@@ -6,6 +6,7 @@ import {
 import { Spinner } from 'react-bootstrap';
 import { useGetOneDragonQuery } from 'redux/API/api';
 import { DragonListComponent } from 'components/DragonListComponent/DragonListComponent';
+import Alert from 'react-bootstrap/Alert';
 
 const DragonDetails = () => {
   const { dragonId } = useParams();
@@ -26,7 +27,13 @@ const DragonDetails = () => {
     <>
       {isLoading && <Spinner animation="border" variant="primary" />}
       {error && <p>{error.message}</p>}
-      {data && <DragonListComponent dragon={data} />}
+      {data ? (
+        <DragonListComponent dragon={data} />
+      ) : (
+        <Alert variant="warning" style={{ textAlign: 'center' }}>
+          Dragon not found
+        </Alert>
+      )}
     </>
   );
 };

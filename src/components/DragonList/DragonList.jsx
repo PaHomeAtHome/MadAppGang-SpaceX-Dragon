@@ -6,7 +6,7 @@ import { Spinner } from 'react-bootstrap';
 
 export const DragonList = () => {
   const { data, error, isLoading, refetch } = useGetDragonsQuery();
-  console.log(data);
+
   useEffect(() => {
     if (data) {
       setTimeout(refetch, 1500);
