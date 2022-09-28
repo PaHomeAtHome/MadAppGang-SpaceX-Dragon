@@ -8,10 +8,16 @@ export const Element = styled.div`
   border-radius: 10px;
   background-color: #fbfbfb;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
 `;
 
 export const Slider = styled(Carousel)`
   background-color: #000000cc;
+  width: 100%;
+  margin: 0 !important;
 
   @media screen and (min-width: 700px) {
     padding: 20px;

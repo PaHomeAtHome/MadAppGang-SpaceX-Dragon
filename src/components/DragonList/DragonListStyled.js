@@ -7,6 +7,7 @@ export const DragonListStyled = styled.ul`
   grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
   gap: 10px;
   justify-content: center;
+  flex-grow: 1;
 
   @media screen and (max-width: 360px) {
     margin-left: -10px;

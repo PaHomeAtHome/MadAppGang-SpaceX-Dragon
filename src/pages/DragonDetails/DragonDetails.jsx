@@ -27,9 +27,8 @@ const DragonDetails = () => {
     <>
       {isLoading && <Spinner animation="border" variant="primary" />}
       {error && <p>{error.message}</p>}
-      {data ? (
-        <DragonListComponent dragon={data} />
-      ) : (
+      {data && <DragonListComponent dragon={data} />}
+      {!data && !isLoading && (
         <Alert variant="warning" style={{ textAlign: 'center' }}>
           Dragon not found
         </Alert>
