@@ -37,4 +37,5 @@ export const Toggle = styled(Menu.Toggle)`
 
 export const Options = styled(Menu.Menu)`
   text-align: center;
+  width: max-content !important;
 `;

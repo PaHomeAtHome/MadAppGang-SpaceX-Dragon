@@ -17,7 +17,7 @@ export const Element = styled.div`
 export const Slider = styled(Carousel)`
   background-color: #000000cc;
   width: 100%;
-  margin: 0 !important;
+  margin: 10px auto !important;
 
   @media screen and (min-width: 700px) {
     padding: 20px;

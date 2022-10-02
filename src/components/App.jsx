@@ -9,8 +9,8 @@ import DragonDetails from 'pages/DragonDetails/DragonDetails';
 
 const token = true;
 const user = {
-  name: 'randomsadsaddas asdsaddasasd ',
-  email: 'random.org',
+  name: 'Test name',
+  email: 'test@mail.com',
 };
 
 export const App = () => {
